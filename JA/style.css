@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1920px;
+    max-height: 1024px;
+    background-color: #999;
+}
+
+.welcome {
+    height: 100vh;
+    background-image: url("I1.JPG");
+    background-size: cover;
+    filter: grayscale(100%);
+    background-position: 60% 50%;
+    color: white;
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+.welcome h1,
+.welcome h2,
+button,
+.myportfolio {
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.bar,
+.arrow {
+    position: fixed;
+}
+
+
+
+.welcome h1 {
+    top: 30%;
+    left: 3%;
+    font-size: 24px;
+    text-shadow: 0 0 5px black;
+
+}
+
+.welcome h2 {
+    text-align: justify;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-shadow: 0 0 5px black;
+    line-height: 1.5;
+    font-size: 24px;
+
+
+}
+
+.welcome h2 span {
+    display: block;
+    font-size: 15px;
+    text-align: center;
+}
+
+.welcome .myportfolio {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.myportfolio:hover {
+    background-color: rgb(78, 68, 68);
+}
+
+/* 
+.menu-container {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+} */
+
+.bar,
+.arrow {
+    cursor: pointer;
+    top: 2%;
+    left: 3%;
+    font-size: 1.5em;
+    transition: .4s;
+    color: white;
+
+}
+
+.arrow {
+    display: none;
+
+}
+
+.slide-menu {
+    position: fixed;
+    top: 60px;
+    left: -300px;
+    background-color: #888;
+    color: white;
+    padding: 10px;
+    width: 300px;
+    margin: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.slide-menu ul i {
+    padding-right: 10px;
+}
+
+.slide-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.slide-menu a:hover {
+    background-color: #555;
+}
+
+.portfolio {
+    background-color: rgb(19, 17, 17)
+}
+
+.portfolio h1 {
+
+    color: white;
+    font-weight: 500;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio table {
+
+    width: 100%;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+.portfolio table td a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 4px;
+    padding: 8px 15px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+.portfolio table td a:hover {
+    background-color: #ddd;
+    color: black;
+
+}
+
+.portfolio table th {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 2px;
+    width: 50%;
+
+}
+
+.portfolio table .description {
+    border-bottom: 1px solid white;
+}
+
+.portfolio table ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.portfolio table li {
+    list-style: none;
+
+}
+
+footer {
+    margin: 10px auto;
+    text-align: right;
+    padding: 20px;
+}
+
+footer h1 {
+    font-weight: 500;
+}
+
+footer p {
+    padding: 10px;
+}
+
+footer p i {
+    padding-right: 10px;
+}
+
+@media (min-width: 370px) {
+    .welcome h1 {
+        left: 10%;
+    }
+}
+
+@media (min-width: 500px) {
+
+    .welcome h1,
+    .welcome h2 {
+        font-size: 30px;
+        left: 15%;
+        transform: none;
+    }
+
+    .bar,
+    .arrow {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .welcome h1,
+    .welcome h2 {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media(min-width: 800px) {
+    .portfolio table {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 1150px) {
+    .welcome h1 {
+        font-size: 45px;
+        top: 25%;
+    }
+
+    .welcome .myportfolio {
+        font-size: 24px;
+        padding: 15px;
+        top: 60%;
+    }
+
+    .portfolio table {
+        width: 60%;
+        margin: 0 auto 20px;
+    }
+
+    footer {
+        padding: 20px 20%;
+    }
+}
